@@ -4,7 +4,7 @@ public class QuoteUDPServer {
 
 	public static void main(String[] args) {
 
-		int shalev = 7;
+		int shalev = 8;
 	}
 
 }
