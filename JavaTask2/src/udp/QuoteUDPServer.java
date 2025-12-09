@@ -1,5 +1,6 @@
 package udp;
 
+import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
@@ -69,7 +70,7 @@ public class QuoteUDPServer {
 			socket.close();
 			System.out.println("Server shutting down. ");
 
-		} catch (Exception e) {
+		} catch (IOException e) {
 			// תופס שגיאות כלליות של השרת (למשל אם הפורט תפוס)
 			e.printStackTrace();
 		}
