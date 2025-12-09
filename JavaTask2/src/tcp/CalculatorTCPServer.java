@@ -27,7 +27,7 @@ public class CalculatorTCPServer {
 			while ((clientText = in.readLine()) != null) {
 
 //				client decided to close app
-				if ("exit".equalsIgnoreCase(clientText.trim())) {
+				if ("close".equalsIgnoreCase(clientText.trim())) {
 					System.out.println("Client request to close connection.");
 					System.out.println("Client disconnected.");
 					break;
